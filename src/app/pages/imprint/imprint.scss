@@ -1,0 +1,55 @@
+:host {
+
+    display: block;
+
+}
+
+.card {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 3rem;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+}
+
+.card h2 {
+
+    margin-bottom: 2rem;
+
+}
+
+.card h3 {
+
+    margin-top: 2rem;
+
+    margin-bottom: .75rem;
+
+    color: var(--primary);
+
+}
+
+.card p {
+
+    line-height: 1.8;
+
+}
+
+@media (max-width: 768px) {
+
+    .card {
+
+        padding: 2rem;
+
+    }
+
+}

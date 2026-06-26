@@ -1,0 +1,194 @@
+<app-hero
+  [title]="hero.title"
+  [subtitle]="hero.subtitle"
+  [image]="hero.image"
+  [home]="true">
+</app-hero>
+
+<section class="facts">
+
+  <div class="container">
+
+    <div class="feature-grid">
+
+      @for (feature of features; track feature.title) {
+
+        <app-feature-card
+          [icon]="feature.icon"
+          [title]="feature.title"
+          [text]="feature.text">
+        </app-feature-card>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
+    <div class="intro">
+
+      <div class="content">
+        <app-section
+        eyebrow="Willkommen"
+        title="Die größte deutschsprachige Lazarus-Konferenz"
+        subtitle="Drei Tage voller Vorträge, Workshops und Networking rund um Lazarus und Free Pascal.">
+      </app-section>
+
+        <p>
+          Die Lazarus-Konferenz bringt Entwickler, Open-Source-Enthusiasten
+          und Unternehmen zusammen. Neben spannenden Vorträgen erwarten dich
+          praktische Workshops, interessante Gespräche und jede Menge
+          Networking.
+        </p>
+
+        <p>
+          Egal ob Einsteiger oder erfahrener Entwickler – hier findest du
+          Inspiration, neue Kontakte und aktuelles Wissen rund um Lazarus und
+          Free Pascal.
+        </p>
+
+      </div>
+
+      <div class="cta">
+
+        <h3>Jetzt anmelden</h3>
+
+        <p>
+            Sichere dir deinen Platz für die Lazarus-Konferenz 2026.
+        </p>
+
+        <app-button
+            text="Tickets kaufen ↗"
+            href="https://eventfrog.de/de/p/wissenschaft-und-technik/lazaruskonferenz-2026-7418767730667484008.html"
+            variant="secondary"
+            [external]="true">
+        </app-button>
+
+    </div>
+
+    </div>
+    
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
+    <app-section
+      eyebrow="Highlights"
+      title="Was dich erwartet"
+      subtitle="Eine Auswahl der Themen der Lazarus-Konferenz.">
+    </app-section>
+
+    <div class="feature-grid">
+
+      @for (highlight of highlights; track highlight.title) {
+
+        <app-feature-card
+          [icon]="highlight.icon"
+          [title]="highlight.title"
+          [text]="highlight.text">
+        </app-feature-card>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="location">
+
+  <div class="container">
+
+    <app-section
+      eyebrow="Veranstaltungsort"
+      [title]="location.title"
+      [subtitle]="location.subtitle">
+    </app-section>
+
+    <div class="location-grid">
+
+      <div>
+
+        <img
+          [src]="location.image"
+          [alt]="location.title">
+
+      </div>
+
+      <div>
+
+        <p>
+          {{ location.text }}
+        </p>
+
+        <app-button
+          text="Mehr erfahren"
+          href="/veranstaltungsort"
+          variant="primary">
+        </app-button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="ticket-banner">
+
+  <div class="container">
+
+    <div class="ticket-box">
+
+      <div>
+
+        <h2>Jetzt Ticket sichern</h2>
+
+        <p>
+          Die Teilnehmerzahl ist begrenzt. Sichere dir rechtzeitig deinen Platz.
+        </p>
+
+      </div>
+
+      <app-button
+        text="Zu Eventfrog ↗"
+        href="https://eventfrog.de/de/p/wissenschaft-und-technik/lazaruskonferenz-2026-7418767730667484008.html"
+        variant="secondary"
+        [external]="true">
+      </app-button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="container">
+
+    <app-section
+      eyebrow="FAQ"
+      title="Häufig gestellte Fragen"
+      subtitle="Die wichtigsten Informationen auf einen Blick.">
+    </app-section>
+
+    <app-faq
+      [items]="faq">
+    </app-faq>
+
+  </div>
+
+</section>

@@ -1,0 +1,38 @@
+<nav
+    [class.mobile]="mobile()">
+
+    @for(item of items(); track item.label){
+
+        @if(item.route){
+
+            <a
+                [routerLink]="item.route"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{
+                    exact:item.route === '/'
+                }">
+
+                {{ item.label }}
+
+            </a>
+
+        }
+
+        @if(item.href){
+
+            <a
+                [href]="item.href"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                {{ item.label }}
+
+                ↗
+
+            </a>
+
+        }
+
+    }
+
+</nav>

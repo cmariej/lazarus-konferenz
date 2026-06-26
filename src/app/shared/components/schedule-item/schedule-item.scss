@@ -1,0 +1,47 @@
+.schedule-item {
+
+    display: grid;
+
+    grid-template-columns: 120px 1fr;
+
+    gap: 2rem;
+
+    padding: 1.5rem;
+
+    background: white;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition: .25s;
+
+}
+
+.schedule-item:hover {
+
+    transform: translateX(6px);
+
+}
+
+.time {
+
+    font-size: 1.3rem;
+
+    font-weight: 700;
+
+    color: var(--primary);
+
+}
+
+.content h3 {
+
+    margin-bottom: .5rem;
+
+}
+
+.content p {
+
+    color: #60758b;
+
+}

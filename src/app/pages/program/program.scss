@@ -1,0 +1,57 @@
+.day-selector {
+
+    display: flex;
+
+    gap: 1rem;
+
+    margin-bottom: 3rem;
+
+}
+
+.day-selector button {
+
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 16px;
+
+    background: white;
+
+    box-shadow: var(--shadow);
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.day-selector button.active {
+
+    background: var(--primary);
+
+    color: white;
+
+}
+
+.program-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+}
+
+@media(max-width:700px){
+
+    .day-selector{
+
+        flex-direction:column;
+
+    }
+
+}

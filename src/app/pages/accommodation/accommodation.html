@@ -1,0 +1,34 @@
+<app-hero
+    title="Unterkünfte"
+    subtitle="Empfohlene Hotels in der Nähe">
+</app-hero>
+
+<section>
+
+    <div class="container">
+
+        <app-section
+            eyebrow="Hotels"
+            title="Empfehlungen"
+            subtitle="Passende Übernachtungsmöglichkeiten rund um die Konferenz">
+        </app-section>
+
+        <div class="hotel-grid">
+
+            @for(hotel of hotels; track hotel.name){
+
+                <app-hotel-card
+                    [name]="hotel.name"
+                    [description]="hotel.description"
+                    [image]="hotel.image"
+                    [distance]="hotel.distance"
+                    [website]="hotel.website">
+                </app-hotel-card>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

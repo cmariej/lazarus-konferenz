@@ -1,0 +1,66 @@
+<app-hero
+    title="Verpflegung"
+    subtitle="Essen & Trinken während der Konferenz">
+</app-hero>
+
+<section>
+
+    <div class="container">
+
+        <app-section
+            eyebrow="Informationen"
+            title="Verpflegung vor Ort"
+            subtitle="Die Verpflegung erfolgt in Eigenregie.">
+        </app-section>
+
+        <div class="feature-grid">
+
+            @for(item of catering; track item.title){
+
+                <app-feature-card
+                    [icon]="item.icon"
+                    [title]="item.title"
+                    [text]="item.text">
+                </app-feature-card>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <app-section
+            eyebrow="In der Nähe"
+            title="Restaurants & Imbisse"
+            subtitle="Alle Entfernungen sind ungefähre Fußwege.">
+        </app-section>
+
+        <div class="restaurant-list">
+
+            @for(item of restaurants; track item.name){
+
+                <div class="restaurant">
+
+                    <div>
+
+                        <h3>{{ item.name }}</h3>
+
+                        <span>{{ item.distance }}</span>
+
+                    </div>
+
+                </div>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

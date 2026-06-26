@@ -1,0 +1,60 @@
+<app-hero
+  [title]="hero.title"
+  [subtitle]="hero.subtitle">
+</app-hero>
+
+<section>
+
+  <div class="container">
+
+    <app-section
+      eyebrow="Programm"
+      title="Vorläufiges Programm"
+      subtitle="Änderungen bis zur Veranstaltung möglich.">
+    </app-section>
+
+    <div class="day-selector">
+
+      <button
+        (click)="selectedDay.set('friday')"
+        [class.active]="selectedDay() === 'friday'">
+
+        Freitag
+
+      </button>
+
+      <button
+        (click)="selectedDay.set('saturday')"
+        [class.active]="selectedDay() === 'saturday'">
+
+        Samstag
+
+      </button>
+
+      <button
+        (click)="selectedDay.set('sunday')"
+        [class.active]="selectedDay() === 'sunday'">
+
+        Sonntag
+
+      </button>
+
+    </div>
+
+    <div class="program-list">
+
+      @for(item of program(); track item.time){
+
+        <app-schedule-item
+          [time]="item.time"
+          [title]="item.title"
+          [speaker]="item.speaker ?? ''">
+        </app-schedule-item>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>

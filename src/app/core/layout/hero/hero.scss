@@ -1,0 +1,187 @@
+.hero {
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 480px;
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(51, 152, 204, 0.8),
+            rgba(0, 83, 125, 0.5),
+        ),
+        url('/hero-background.png') center bottom / cover no-repeat;
+
+}
+
+.hero.home {
+
+    min-height: 620px;
+
+}
+
+.background {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+.overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: radial-gradient(
+        45deg,
+        var(--primary) 0%,
+        var(--primary-light) 70%
+    );
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 7rem;
+
+    align-items: center;
+
+}
+
+.badge {
+
+    display: inline-block;
+
+    margin-bottom: 1.5rem;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.12);
+
+    backdrop-filter: blur(12px);
+
+    font-weight: 600;
+
+}
+
+.hero h1 {
+
+    margin-bottom: 1.5rem;
+
+}
+
+.hero p {
+
+    max-width: 700px;
+
+    color: rgba(255,255,255,.9);
+
+    font-size: 1.2rem;
+
+}
+
+.buttons {
+
+    display: flex;
+
+    gap: 1rem;
+
+    margin-top: 3rem;
+
+}
+
+.facts {
+
+    display: grid;
+
+    gap: 1rem;
+
+}
+
+.facts div {
+
+    padding: 1.5rem;
+
+    border-radius: var(--radius);
+
+    background: rgba(255,255,255,.1);
+
+    backdrop-filter: blur(12px);
+
+    transition:.25s;
+
+}
+
+.facts div:hover{
+
+    transform:translateY(-6px);
+
+    background:rgba(255,255,255,.18);
+
+}
+
+.facts strong {
+
+    display: block;
+
+    font-size: 2rem;
+
+    margin-bottom: .5rem;
+
+}
+
+.facts span {
+
+    color: rgba(255,255,255,.9);
+
+}
+
+@media(max-width:1000px){
+
+    .hero.home{
+
+        min-height: auto;
+
+        padding: 140px 0 80px;
+
+    }
+
+    .hero-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+    }
+
+}

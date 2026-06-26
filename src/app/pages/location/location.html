@@ -1,0 +1,34 @@
+<app-hero
+    title="Veranstaltungsort"
+    [subtitle]="location.subtitle"
+    [image]="location.image">
+</app-hero>
+
+<section>
+
+    <div class="container">
+
+        <app-section
+            eyebrow="Veranstaltungsort"
+            [title]="location.title"
+            subtitle="Ein Ort für Wissen und Networking">
+        </app-section>
+
+        <div class="location-grid">
+
+            <img
+                [src]="location.image"
+                [alt]="location.title">
+
+            <div>
+
+                <p>{{ location.description }}</p>
+                <p><u>Adresse:</u><br>{{ location.address }}</p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

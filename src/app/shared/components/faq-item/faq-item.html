@@ -1,0 +1,32 @@
+<div class="faq-item">
+
+    <button
+        class="question"
+        type="button"
+        (click)="toggle()">
+
+        <span>{{ question() }}</span>
+
+        <span class="icon">
+
+            @if (open()) {
+                −
+            } @else {
+                +
+            }
+
+        </span>
+
+    </button>
+
+    @if (open()) {
+
+        <div class="answer">
+
+            <p>{{ answer() }}</p>
+
+        </div>
+
+    }
+
+</div>

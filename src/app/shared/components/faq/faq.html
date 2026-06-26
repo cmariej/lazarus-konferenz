@@ -1,0 +1,12 @@
+<div class="faq-list">
+
+    @for (item of items(); track item.question) {
+
+        <app-faq-item
+            [question]="item.question"
+            [answer]="item.answer">
+        </app-faq-item>
+
+    }
+
+</div>

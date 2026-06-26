@@ -1,0 +1,32 @@
+<app-hero
+    title="Anreise"
+    subtitle="So erreichst du die Lazarus-Konferenz">
+</app-hero>
+
+<section>
+
+    <div class="container">
+
+        <app-section
+            eyebrow="Anreise"
+            title="Der Weg nach Bremerhaven"
+            subtitle="Alle wichtigen Informationen zur Anreise.">
+        </app-section>
+
+        <div class="travel-grid">
+
+            @for(item of travel; track item.title){
+
+                <app-feature-card
+                    [icon]="item.icon"
+                    [title]="item.title"
+                    [text]="item.text">
+                </app-feature-card>
+
+            }
+
+        </div>
+
+    </div>
+
+</section>

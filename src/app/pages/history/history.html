@@ -1,0 +1,28 @@
+<app-hero
+    title="Geschichte"
+    subtitle="Seit 2008 von der Community für die Community">
+</app-hero>
+
+<section>
+
+    <div class="container">
+
+        <app-section
+            eyebrow="Historie"
+            title="18 Jahre Lazarus-Konferenz"
+            subtitle="Von den ersten Treffen bis zur heutigen Konferenz.">
+        </app-section>
+
+        @for(item of history; track item.year){
+
+            <app-timeline
+                [year]="item.year"
+                [title]="item.title"
+                [text]="item.text">
+            </app-timeline>
+
+        }
+
+    </div>
+
+</section>

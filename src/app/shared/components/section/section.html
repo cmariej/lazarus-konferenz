@@ -1,0 +1,19 @@
+<div class="section-header" [class.center]="center()">
+
+    @if (eyebrow()) {
+        <span class="eyebrow">
+            {{ eyebrow() }}
+        </span>
+    }
+
+    <h2>
+        {{ title() }}
+    </h2>
+
+    @if (subtitle()) {
+        <p>
+            {{ subtitle() }}
+        </p>
+    }
+
+</div>

@@ -1,0 +1,69 @@
+.hotel-card {
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition: .25s;
+
+}
+
+.hotel-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.content {
+
+    padding: 2rem;
+
+}
+
+.content h3 {
+
+    margin-bottom: 1rem;
+
+}
+
+.content p {
+
+    margin-bottom: 1rem;
+
+    line-height: 1.7;
+
+}
+
+.content span {
+
+    display: block;
+
+    color: var(--primary);
+
+    font-weight: 700;
+
+    margin-bottom: 1.5rem;
+
+}
+
+.content a {
+
+    color: var(--accent);
+
+    font-weight: 700;
+
+}

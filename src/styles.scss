@@ -1,0 +1,213 @@
+/* ----------------------------------------------------------
+   Fonts
+---------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ----------------------------------------------------------
+   Theme
+---------------------------------------------------------- */
+
+:root {
+
+    --primary: #00537d;
+    --primary-light: #3398cc;
+
+    --secondary: #003b58;
+
+    --accent: #ff9934;
+
+    --background: #F5F8FC;
+
+    --surface: #FFFFFF;
+
+    --text: #263238;
+    --text-light: #607D8B;
+
+    --border: #E4EAF2;
+
+    --shadow:
+        0 8px 24px rgba(0, 0, 0, .08);
+
+    --shadow-hover:
+        0 18px 40px rgba(0, 0, 0, .14);
+
+    --radius: 22px;
+
+    --header-height: 82px;
+
+    --container: 1280px;
+
+    --transition: .25s ease;
+
+}
+
+/* ----------------------------------------------------------
+   Reset
+---------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    margin: 0;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    font-family: "Inter", sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+
+}
+
+img {
+
+    display: block;
+
+    max-width: 100%;
+
+}
+
+button,
+input,
+textarea,
+select {
+
+    font: inherit;
+
+}
+
+a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    margin: 0;
+
+    line-height: 1.15;
+
+}
+
+p {
+
+    margin: 0;
+
+}
+
+/* ----------------------------------------------------------
+   Layout
+---------------------------------------------------------- */
+
+.container {
+
+    width: min(var(--container), calc(100% - 48px));
+
+    margin-inline: auto;
+
+}
+
+section {
+
+    padding: 45px 0;
+
+}
+
+/* ----------------------------------------------------------
+   Typography
+---------------------------------------------------------- */
+
+h1 {
+
+    font-size: clamp(3rem, 7vw, 5rem);
+
+    font-weight: 800;
+
+}
+
+h2 {
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    font-weight: 700;
+
+}
+
+h3 {
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+}
+
+p {
+
+    color: var(--text-light);
+
+    line-height: 1.8;
+
+}
+
+/* ----------------------------------------------------------
+   Utilities
+---------------------------------------------------------- */
+
+.text-center {
+
+    text-align: center;
+
+}
+
+.mt-0 {
+
+    margin-top: 0;
+
+}
+
+.mb-0 {
+
+    margin-bottom: 0;
+
+}
+
+.mb-1 {
+
+    margin-bottom: 1rem;
+
+}
+
+.mb-2 {
+
+    margin-bottom: 2rem;
+
+}
+
+.mb-3 {
+
+    margin-bottom: 3rem;
+
+}

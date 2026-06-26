@@ -1,0 +1,57 @@
+<section
+    class="hero"
+    [class.home]="home()">
+
+    <div class="overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="text">
+
+            @if (!home()) {
+                <span class="badge">
+
+                    Lazarus-Konferenz 2026
+
+                </span>
+            }   
+
+            <h1>
+
+                {{ title() }}
+
+            </h1>
+
+            @if (subtitle()) {
+
+                <p>
+
+                    {{ subtitle() }}
+
+                </p>
+
+            }
+
+            @if (home()) {
+
+                <div class="buttons">
+
+                    <app-button
+                        text="Tickets kaufen"
+                        href="https://eventfrog.de/de/p/wissenschaft-und-technik/lazaruskonferenz-2026-7418767730667484008.html"
+                        [external]="true">
+                    </app-button>
+
+                    <app-button
+                        text="Programm"
+                        routerLink="/programm"
+                        variant="secondary">
+                    </app-button>
+
+                </div>
+
+            }
+
+        </div>
+    </div>
+</section>

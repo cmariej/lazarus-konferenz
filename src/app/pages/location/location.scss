@@ -1,0 +1,39 @@
+.location-grid {
+
+    display:grid;
+
+    grid-template-columns:1.3fr 1fr;
+
+    gap:4rem;
+
+    align-items:center;
+
+}
+
+.location-grid img{
+
+    width:100%;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+.location-grid p{
+
+    margin-bottom:1rem;
+
+    line-height:1.8;
+
+}
+
+@media(max-width:900px){
+
+    .location-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

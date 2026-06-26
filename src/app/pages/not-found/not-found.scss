@@ -1,0 +1,33 @@
+.not-found {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:70vh;
+
+    text-align:center;
+
+}
+
+h1{
+
+    font-size:8rem;
+
+    color:var(--primary);
+
+}
+
+h2{
+
+    margin:1rem 0;
+
+}
+
+p{
+
+    margin-bottom:2rem;
+
+}

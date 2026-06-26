@@ -1,0 +1,89 @@
+.button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: .6rem;
+
+    min-width: 180px;
+
+    padding: 16px 28px;
+
+    border-radius: 999px;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-weight: 700;
+
+    letter-spacing: .2px;
+
+    transition: all .25s ease;
+
+    cursor: pointer;
+
+    user-select: none;
+
+    box-shadow: 0 12px 30px rgba(21,101,192,.25);
+
+}
+
+.button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: var(--shadow-hover);
+
+}
+
+.button:active {
+
+    transform: translateY(0);
+
+}
+
+.button.secondary {
+
+    background: white;
+
+    color: var(--primary);
+
+}
+
+.button.secondary:hover {
+
+    background: #f6f8fb;
+
+}
+
+.button.outline {
+
+    background: transparent;
+
+    color: white;
+
+    border: 2px solid rgba(255,255,255,.4);
+
+    box-shadow: none;
+
+}
+
+.button.outline:hover {
+
+    background: rgba(255,255,255,.12);
+
+}
+
+@media(max-width:700px){
+
+    .button{
+
+        width:100%;
+
+    }
+
+}

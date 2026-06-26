@@ -1,0 +1,27 @@
+@if (routerLink()) {
+
+<a
+    class="button"
+    [class.secondary]="variant() === 'secondary'"
+    [class.outline]="variant() === 'outline'"
+    [routerLink]="routerLink()">
+
+    {{ text() }}
+
+</a>
+
+} @else {
+
+<a
+    class="button"
+    [class.secondary]="variant() === 'secondary'"
+    [class.outline]="variant() === 'outline'"
+    [href]="href()"
+    [target]="external() ? '_blank' : null"
+    [rel]="external() ? 'noopener noreferrer' : null">
+
+    {{ text() }}
+
+</a>
+
+}

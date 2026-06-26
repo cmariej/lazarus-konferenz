@@ -1,0 +1,21 @@
+<div class="schedule-item">
+
+    <div class="time">
+
+        {{ time() }}
+
+    </div>
+
+    <div class="content">
+
+        <h3>{{ title() }}</h3>
+
+        @if(speaker()){
+
+            <p>{{ speaker() }}</p>
+
+        }
+
+    </div>
+
+</div>

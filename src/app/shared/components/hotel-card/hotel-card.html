@@ -1,0 +1,26 @@
+<div class="hotel-card">
+
+    <img
+        [src]="image()"
+        [alt]="name()">
+
+    <div class="content">
+
+        <h3>{{ name() }}</h3>
+
+        <p>{{ description() }}</p>
+
+        <span>{{ distance() }}</span>
+
+        <a
+            [href]="website()"
+            target="_blank"
+            rel="noopener noreferrer">
+
+            Unterkunft ansehen →
+
+        </a>
+
+    </div>
+
+</div>
