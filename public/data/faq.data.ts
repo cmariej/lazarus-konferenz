@@ -1,4 +1,4 @@
-import { FaqItem } from '../shared/interfaces/faq-item';
+import { FaqItem } from '../../src/app/shared/interfaces/faq-item';
 
 export const FAQ_ITEMS: FaqItem[] = [
   {

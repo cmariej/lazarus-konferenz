@@ -1,4 +1,4 @@
-import { NavigationItem } from '../shared/interfaces/navigation-item';
+import { NavigationItem } from '../../src/app/shared/interfaces/navigation-item';
 
 export const NAVIGATION: NavigationItem[] = [
 

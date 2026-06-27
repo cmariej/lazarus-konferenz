@@ -9,7 +9,7 @@
 
         <app-section
             eyebrow="Historie"
-            title="18 Jahre Lazarus-Konferenz"
+            [title]="title"
             subtitle="Von den ersten Treffen bis zur heutigen Konferenz.">
         </app-section>
 
@@ -17,6 +17,7 @@
 
             <app-timeline
                 [year]="item.year"
+                [image]="item.image"
                 [title]="item.title"
                 [text]="item.text">
             </app-timeline>

@@ -7,7 +7,8 @@ import {
 import { RouterLink } from '@angular/router';
 
 import { Navigation } from '../navigation/navigation';
-import { NAVIGATION } from '../../../data/navigation';
+import { NAVIGATION } from '../../../../../public/data/navigation';
+import { GENERAL_INFO } from '../../../../../public/data/general.data';
 
 @Component({
   selector: 'app-header',
@@ -25,6 +26,8 @@ export class Header {
   protected readonly mobileMenuOpen = signal(false);
 
   protected readonly scrolled = signal(false);
+
+  protected readonly general = GENERAL_INFO;
 
   @HostListener('window:scroll')
   protected onScroll(): void {

@@ -13,6 +13,6 @@ export class ScheduleItem {
 
   readonly title = input.required<string>();
 
-  readonly speaker = input('');
+  readonly description = input('');
 
 }

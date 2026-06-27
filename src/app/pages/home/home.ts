@@ -7,11 +7,12 @@ import { Button } from '../../shared/components/button/button';
 import { Faq } from '../../shared/components/faq/faq';
 
 import { 
+  GENERAL_INFO,
   HOME_FEATURES, 
   HOME_HIGHLIGHTS, 
-  LOCATION
-} from '../../data/home.data';
-import { FAQ_ITEMS } from '../../data/faq.data';
+} from '../../../../public/data/general.data';
+import { FAQ_ITEMS } from '../../../../public/data/faq.data';
+import { LOCATION } from '../../../../public/data/location.data';
 
 
 @Component({
@@ -28,12 +29,7 @@ import { FAQ_ITEMS } from '../../data/faq.data';
 })
 export class Home {
 
-  protected readonly hero = {
-    title: 'Lazarus-Konferenz 2026',
-    subtitle: '25.–27. September 2026 • ATLANTIC Hotel Sail City • Bremerhaven',
-    image: 'assets/images/hero.jpg'
-  };
-
+  protected readonly general = GENERAL_INFO;
   protected readonly features = HOME_FEATURES;
   protected readonly highlights = HOME_HIGHLIGHTS;
   protected readonly location = LOCATION;

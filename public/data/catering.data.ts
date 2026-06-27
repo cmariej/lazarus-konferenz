@@ -24,27 +24,31 @@ export const RESTAURANTS = [
 
   {
     name: 'Stadtbäckerei Engelbrecht',
-    distance: 'ca. 130 m'
-  },
-
-  {
-    name: 'Imbiss vor Hornbach',
-    distance: 'ca. 240 m'
-  },
-
-  {
-    name: 'China-Restaurant Peking Haus',
     distance: 'ca. 220 m'
   },
 
   {
-    name: 'Kaufland (Bäcker & Imbiss)',
-    distance: 'ca. 680 m'
+    name: 'Böckels Beste',
+    distance: 'ca. 300 m'
   },
 
   {
-    name: 'McDonald\'s',
-    distance: 'ca. 2,4 km'
+    name: 'China-Restaurant Peking Haus',
+    distance: 'ca. 280 m'
+  },
+
+  {
+    name: 'Diana\'s Hähnchengrill',
+    distance: 'ca. 700 m'
+  },
+
+  {
+    name: 'Asiagourmet- Van Tat Im Kaufland',
+    distance: 'ca. 700 m'
+  },
+  {
+    name: 'Sushi Circle',
+    distance: 'ca. 700 m'
   }
 
 ];

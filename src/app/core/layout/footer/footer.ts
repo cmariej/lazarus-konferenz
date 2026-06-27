@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { GENERAL_INFO } from '../../../../../public/data/general.data';
+import { LOCATION } from '../../../../../public/data/location.data';
 
 @Component({
   selector: 'app-footer',
@@ -12,5 +14,7 @@ import { RouterLink } from '@angular/router';
 export class Footer {
 
   protected readonly year = new Date().getFullYear();
+  protected readonly general = GENERAL_INFO;
+  protected readonly location = LOCATION;
 
 }

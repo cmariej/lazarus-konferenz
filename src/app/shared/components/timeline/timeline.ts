@@ -14,4 +14,6 @@ export class Timeline {
 
   readonly text = input.required<string>();
 
+  readonly image = input.required<string>();
+
 }

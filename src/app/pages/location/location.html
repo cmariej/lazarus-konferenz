@@ -1,7 +1,6 @@
 <app-hero
     title="Veranstaltungsort"
-    [subtitle]="location.subtitle"
-    [image]="location.image">
+    [subtitle]="location.city">
 </app-hero>
 
 <section>
@@ -10,7 +9,7 @@
 
         <app-section
             eyebrow="Veranstaltungsort"
-            [title]="location.title"
+            [title]="location.location"
             subtitle="Ein Ort für Wissen und Networking">
         </app-section>
 
@@ -18,11 +17,11 @@
 
             <img
                 [src]="location.image"
-                [alt]="location.title">
+                [alt]="location.location">
 
             <div>
 
-                <p>{{ location.description }}</p>
+                <p>{{ location.longDescription }}</p>
                 <p><u>Adresse:</u><br>{{ location.address }}</p>
                 
             </div>

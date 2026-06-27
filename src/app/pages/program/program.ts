@@ -4,7 +4,7 @@ import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { ScheduleItem } from '../../shared/components/schedule-item/schedule-item';
 
-import { PROGRAM } from '../../data/program.data';
+import { PROGRAM } from '../../../../public/data/program.data';
 
 @Component({
   selector: 'app-program',

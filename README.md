@@ -1,16 +1,32 @@
-# Webseite aktualisieren
+# Daten und Bilder aktualisieren
 
 ## Daten aktualisieren
 
-Unter `src/app/data`
+Unter `public/data`
+
+Konferenz-Termin: `public/data/general.data.ts`
+Veranstaltungsort: `public/data/location.data.ts`
+
+Programm: `public/data/program.data.ts`
+
+Unterkünfte: `public/data/accomodation.data.ts`
+Verpflegung: `public/data/catering.data.ts`
+
+Historie: `public/data/history.data.ts`
+
 
 ## Bilder aktualisieren oder hinzufügen
 
-Unter `public`
+Unter `public/images`
 
-## Anwendung lokal starten
+Bilder zu Veranstaltungsorten: `public/images/locations`
+Bilder zu Unterkünften: `public/images/accomodation`
 
-### Voraussetzungen
+
+
+# Anwendung lokal starten
+
+## Voraussetzungen
 
 Für den lokalen Start der Anwendung werden folgende Komponenten benötigt:
 
@@ -35,7 +51,7 @@ npm install -g @angular/cli
 
 ---
 
-### Projekt einrichten
+## Projekt einrichten
 
 Repository klonen:
 
@@ -48,7 +64,7 @@ Oder direkt in das Projektverzeichnis wechseln.
 
 ---
 
-### Abhängigkeiten installieren
+## Abhängigkeiten installieren
 
 Alle benötigten Pakete installieren:
 
@@ -60,7 +76,7 @@ Dadurch wird der Ordner `node_modules` erstellt.
 
 ---
 
-### Anwendung starten
+## Anwendung starten
 
 Über das Startskript:
 
@@ -88,7 +104,7 @@ http://localhost:4200
 
 ---
 
-### Nützliche Befehle
+## Nützliche Befehle
 
 | Befehl | Beschreibung |
 |---------|--------------|
@@ -101,9 +117,9 @@ http://localhost:4200
 
 ---
 
-### Häufige Probleme
+## Häufige Probleme
 
-#### `ng` wird nicht erkannt
+### `ng` wird nicht erkannt
 
 ```bash
 npm install -g @angular/cli
@@ -115,13 +131,13 @@ oder
 npx ng serve
 ```
 
-#### Fehlende Pakete
+### Fehlende Pakete
 
 ```bash
 npm install
 ```
 
-#### Port 4200 ist belegt
+### Port 4200 ist belegt
 
 ```bash
 ng serve --port 4300
@@ -129,7 +145,7 @@ ng serve --port 4300
 
 ---
 
-### Schnellstart
+## Schnellstart
 
 ```bash
 git clone <Repository-URL>

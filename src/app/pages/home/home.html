@@ -1,7 +1,6 @@
 <app-hero
-  [title]="hero.title"
-  [subtitle]="hero.subtitle"
-  [image]="hero.image"
+  [title]="general.title + ' ' + general.year"
+  [subtitle]="general.date + ' ' + general.year + '&nbsp;&nbsp;&nbsp; •  &nbsp;&nbsp;&nbsp;' + location.location + '&nbsp;&nbsp;&nbsp;  •  &nbsp;&nbsp;&nbsp;' + location.city"
   [home]="true">
 </app-hero>
 
@@ -112,8 +111,8 @@
 
     <app-section
       eyebrow="Veranstaltungsort"
-      [title]="location.title"
-      [subtitle]="location.subtitle">
+      [title]="location.location"
+      [subtitle]="location.city">
     </app-section>
 
     <div class="location-grid">
@@ -122,14 +121,14 @@
 
         <img
           [src]="location.image"
-          [alt]="location.title">
+          [alt]="location.location">
 
       </div>
 
       <div>
 
         <p>
-          {{ location.text }}
+          {{ location.shortDescription }}
         </p>
 
         <app-button

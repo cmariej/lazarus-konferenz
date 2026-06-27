@@ -4,7 +4,7 @@ import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { Timeline } from '../../shared/components/timeline/timeline';
 
-import { HISTORY } from '../../data/history.data';
+import { HISTORY } from '../../../../public/data/history.data';
 
 @Component({
   selector: 'app-history',
@@ -19,5 +19,7 @@ import { HISTORY } from '../../data/history.data';
 export class History {
 
   protected readonly history = HISTORY;
+
+  title = `${new Date().getFullYear() - 2008} Jahre Lazarus-Konferenz`;
 
 }

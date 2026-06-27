@@ -7,7 +7,7 @@ import { FeatureCard } from '../../shared/components/feature-card/feature-card';
 import {
   CATERING,
   RESTAURANTS
-} from '../../data/catering.data';
+} from '../../../../public/data/catering.data';
 
 @Component({
   selector: 'app-catering',

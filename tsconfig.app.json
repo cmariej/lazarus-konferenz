@@ -8,7 +8,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "public/data/catering.data.ts", "public/data/faq.data.ts", "public/data/history.data.ts", "public/data/general.data.ts", "public/data/location.data.ts", "public/data/navigation.ts", "public/data/program.data.ts", "public/data/travel.data.ts", "public/data/accomodation.data.ts"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]

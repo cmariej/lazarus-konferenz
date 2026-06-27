@@ -1,6 +1,7 @@
 import { Component, input } from '@angular/core';
 
 import { Button } from '../../../shared/components/button/button';
+import { GENERAL_INFO } from '../../../../../public/data/general.data';
 
 @Component({
   selector: 'app-hero',
@@ -16,8 +17,10 @@ export class Hero {
 
   readonly subtitle = input('');
 
-  readonly image = input('');
-
   readonly home = input(false);
+
+  protected readonly general = GENERAL_INFO;
+
+
 
 }

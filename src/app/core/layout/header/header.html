@@ -1,15 +1,12 @@
-<header
-    [class.scrolled]="scrolled()">
+<header [class.scrolled]="scrolled()">
 
     <div class="container navbar">
 
-        <a
-            class="logo"
-            routerLink="/">
+        <a class="logo" routerLink="/">
 
             <span>
 
-                <img src="logo.svg" alt="Lazarus Konferenz" width="45" height="45">
+                <img src="images/logo.svg" alt="Lazarus Konferenz" width="45" height="45">
 
             </span>
 
@@ -17,31 +14,24 @@
 
                 <strong>Lazarus</strong>
 
-                <small>Konferenz 2026</small>
+                <small>Konferenz {{ general.year }}</small>
 
             </div>
 
         </a>
 
-        <app-navigation
-            class="desktop-nav"
-            [items]="navigation">
+        <app-navigation class="desktop-nav" [items]="navigation">
         </app-navigation>
 
-        <a
-            class="ticket-button"
+        <a class="ticket-button"
             href="https://eventfrog.de/de/p/wissenschaft-und-technik/lazaruskonferenz-2026-7418767730667484008.html"
-            target="_blank"
-            rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer">
 
             Tickets
 
         </a>
 
-        <button
-            class="burger"
-            type="button"
-            (click)="toggleMenu()">
+        <button class="burger" type="button" (click)="toggleMenu()">
 
             ☰
 
@@ -51,14 +41,12 @@
 
     @if (mobileMenuOpen()) {
 
-        <div class="mobile-menu">
+    <div class="mobile-menu">
 
-            <app-navigation
-                [items]="navigation"
-                [mobile]="true">
-            </app-navigation>
+        <app-navigation [items]="navigation" [mobile]="true">
+        </app-navigation>
 
-        </div>
+    </div>
 
     }
 

@@ -6,10 +6,6 @@ export interface ScheduleItem {
 
   title: string;
 
-  speaker?: string;
-
-  room?: string;
-
-  type?: 'talk' | 'workshop' | 'break' | 'meal' | 'network';
+  description?: string;
 
 }

@@ -1,16 +1,24 @@
-import { Feature } from '../shared/interfaces/feature';
-import { ScheduleItem } from '../shared/interfaces/schedule-item';
+import { Feature } from '../../src/app/shared/interfaces/feature';
+import { LOCATION } from './location.data';
+
+export const GENERAL_INFO = {
+    title: 'Lazarus-Konferenz',
+    date: '18.–20. September',
+    year: '2026'
+} 
+
+// Features and highlights for the home page
 
 export const HOME_FEATURES: Feature[] = [
   {
     icon: '📅',
-    title: '25.–27. September',
+    title: GENERAL_INFO.date,
     text: 'Drei Tage voller Vorträge und Workshops.'
   },
   {
     icon: '📍',
-    title: 'Bremerhaven',
-    text: 'Elektro-Sasse GmbH'
+    title: LOCATION.location,
+    text: LOCATION.city
   },
   {
     icon: '👥',
@@ -47,14 +55,3 @@ export const HOME_HIGHLIGHTS: Feature[] = [
   }
 ];
 
-export const LOCATION = {
-  title: 'Konferenzraum bei Elektro-Sasse',
-  subtitle: 'Bremerhaven',
-  image: 'location.png',
-  text: `
-    Der Konferenzraum der Elektro Sasse GmbH bietet den idealen Rahmen
-    für drei Tage voller Vorträge, Workshops und Networking. Dank der
-    guten Erreichbarkeit sowie zahlreicher Hotels und Restaurants in der
-    Umgebung ist für Teilnehmerinnen und Teilnehmer bestens gesorgt.
-  `
-};
