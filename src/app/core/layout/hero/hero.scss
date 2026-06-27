@@ -12,14 +12,6 @@
 
     color: white;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(51, 152, 204, 0.8),
-            rgba(0, 83, 125, 0.5),
-        ),
-        url('/hero-background.png') center bottom / cover no-repeat;
-
 }
 
 .hero.home {
@@ -40,6 +32,10 @@
 
     object-fit: cover;
 
+    object-position: center bottom;
+
+    z-index: 0;
+
 }
 
 .overlay {
@@ -48,23 +44,24 @@
 
     inset: 0;
 
-    background: radial-gradient(
-        45deg,
-        var(--primary) 0%,
-        var(--primary-light) 70%
-    );
+    background:
+        linear-gradient(
+            90deg,
+            rgba(51, 152, 204, .75),
+            rgba(0, 83, 125, .55)
+        );
 
     pointer-events: none;
 
+    z-index: 1;
+
 }
 
-.hero-content {
+.container {
 
     position: relative;
 
     z-index: 2;
-
-    align-items: center;
 
 }
 
@@ -78,7 +75,7 @@
 
     border-radius: 999px;
 
-    background: rgba(255,255,255,.12);
+    background: rgba(255, 255, 255, .12);
 
     backdrop-filter: blur(12px);
 
@@ -89,7 +86,10 @@
 .hero h1 {
 
     margin-bottom: 1.5rem;
+
     font-size: clamp(2.2rem, 8vw, 5rem);
+
+    line-height: 1.1;
 
 }
 
@@ -97,7 +97,7 @@
 
     max-width: 700px;
 
-    color: rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
 
     font-size: 1.2rem;
 
@@ -127,19 +127,19 @@
 
     border-radius: var(--radius);
 
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, .1);
 
     backdrop-filter: blur(12px);
 
-    transition:.25s;
+    transition: .25s;
 
 }
 
-.facts div:hover{
+.facts div:hover {
 
-    transform:translateY(-6px);
+    transform: translateY(-6px);
 
-    background:rgba(255,255,255,.18);
+    background: rgba(255, 255, 255, .18);
 
 }
 
@@ -155,13 +155,13 @@
 
 .facts span {
 
-    color: rgba(255,255,255,.9);
+    color: rgba(255, 255, 255, .9);
 
 }
 
-@media(max-width:1000px){
+@media (max-width: 1000px) {
 
-    .hero.home{
+    .hero.home {
 
         min-height: auto;
 
@@ -169,15 +169,15 @@
 
     }
 
-    .hero-content{
+    .hero-content {
 
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
 
     }
 
-    .buttons{
+    .buttons {
 
-        flex-direction:column;
+        flex-direction: column;
 
     }
 

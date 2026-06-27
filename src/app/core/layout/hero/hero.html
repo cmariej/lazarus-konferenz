@@ -2,6 +2,12 @@
     class="hero"
     [class.home]="home()">
 
+    <img
+        class="background"
+        src="images/hero-background.png"
+        alt=""
+        aria-hidden="true">
+
     <div class="overlay"></div>
 
     <div class="container">
@@ -9,12 +15,14 @@
         <div class="text">
 
             @if (!home()) {
+
                 <span class="badge">
 
                     {{ general.title }} {{ general.year }}
 
                 </span>
-            }   
+
+            }
 
             <h1>
 
@@ -53,5 +61,7 @@
             }
 
         </div>
+
     </div>
+
 </section>
