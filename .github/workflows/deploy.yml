@@ -1,4 +1,4 @@
-name: Deploy Angular to GitHub Pages
+name: Deploy Angular
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
       - run: npm ci
 
       - run: npm run build -- --configuration production --base-href /lazarus-konferenz/
-      #- run: npm run build -- --configuration production # Bei custom domain
+      #- run: npm run build -- --configuration production --base-href /lazarus-konferenz/ # bei custom domain
 
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -42,14 +42,15 @@ jobs:
 
     needs: build
 
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
-
     steps:
 
-      - id: deployment
+      - uses: actions/configure-pages@v5
 
+      - id: deployment
         uses: actions/deploy-pages@v4
