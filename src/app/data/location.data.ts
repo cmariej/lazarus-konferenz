@@ -33,6 +33,6 @@ export const LOCATION = {
 
     `,
 
-  image: '/images/locations/elektro-sasse-bremerhaven.png'
+  image: 'images/locations/elektro-sasse-bremerhaven.png'
 
 };
