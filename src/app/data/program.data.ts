@@ -1,5 +1,8 @@
-import { ScheduleItem } from '../../src/app/shared/interfaces/schedule-item';
+import { ScheduleItem } from '../shared/interfaces/schedule-item';
 import { LOCATION } from './location.data';
+
+
+//Zeilenumbruch bei der Beschreibung (description) mit \n einfügen, z.B. "Ort\nAdresse"
 
 export const PROGRAM: ScheduleItem[] = [
 
@@ -9,7 +12,7 @@ export const PROGRAM: ScheduleItem[] = [
     day: 'friday',
     time: '13:00',
     title: 'Einlass',
-    description: `${LOCATION.location} - ${LOCATION.address}`
+    description: `${LOCATION.location}\n${LOCATION.address}`
   },
   {
     day: 'friday',
@@ -28,7 +31,7 @@ export const PROGRAM: ScheduleItem[] = [
     day: 'saturday',
     time: '09:00',
     title: 'Einlass',
-    description: `${LOCATION.location} - ${LOCATION.address}`
+    description: `${LOCATION.location}\n${LOCATION.address}`
   },
 
   {
@@ -72,7 +75,7 @@ export const PROGRAM: ScheduleItem[] = [
     day: 'sunday',
     time: '09:00',
     title: 'Einlass',
-    description: `${LOCATION.location} - ${LOCATION.address}`
+    description: `${LOCATION.location}\n${LOCATION.address}`
   },
   {
     day: 'sunday',

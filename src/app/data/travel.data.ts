@@ -1,21 +1,23 @@
+import { LOCATION } from "./location.data";
+
 export const TRAVEL = [
 
   {
     icon: '🚗',
     title: 'Mit dem Auto',
-    text: 'Elektro Sasse GmbH\nSeeborg 17, \n27572 Bremerhaven'
+    text:  LOCATION.location + '\n' + LOCATION.address.replace(', ', ',\n')
   },
 
   {
     icon: '🚆',
     title: 'Mit der Bahn',
-    text: 'Bis Bremerhaven Hauptbahnhof und anschließend mit den Buslinien 504 oder 505.'
+    text: LOCATION.train
   },
 
   {
     icon: '🚌',
     title: 'ÖPNV',
-    text: 'Haltestelle „Hornbach“'
+    text: LOCATION.publicTransport
   },
 
   {

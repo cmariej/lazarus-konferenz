@@ -19,6 +19,14 @@ export class Button {
 
   readonly external = input(false);
 
+  readonly disabled = input(false);
+
+  readonly icon = input<string>();
+
   readonly variant = input<'primary' | 'secondary' | 'outline'>('primary');
+
+  readonly size = input<'small' | 'normal' | 'large'>('normal');
+  
+
 
 }

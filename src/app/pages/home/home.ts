@@ -5,14 +5,9 @@ import { Section } from '../../shared/components/section/section';
 import { FeatureCard } from '../../shared/components/feature-card/feature-card';
 import { Button } from '../../shared/components/button/button';
 import { Faq } from '../../shared/components/faq/faq';
-
-import { 
-  GENERAL_INFO,
-  HOME_FEATURES, 
-  HOME_HIGHLIGHTS, 
-} from '../../../../public/data/general.data';
-import { FAQ_ITEMS } from '../../../../public/data/faq.data';
-import { LOCATION } from '../../../../public/data/location.data';
+import { GENERAL_INFO, HOME_FEATURES, HOME_HIGHLIGHTS } from '../../data/general.data';
+import { LOCATION } from '../../data/location.data';
+import { FAQ_ITEMS } from '../../data/faq.data';
 
 
 @Component({

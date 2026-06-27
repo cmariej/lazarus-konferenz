@@ -2,19 +2,19 @@
 
 ## Daten aktualisieren
 
-Unter `public/data`
+Unter `src/app/data`
 
-Konferenz-Termin: `public/data/general.data.ts`
+Konferenz-Termin: `src/app/data/general.data.ts`
 
-Veranstaltungsort: `public/data/location.data.ts`
+Veranstaltungsort: `src/app/data/location.data.ts`
 
-Programm: `public/data/program.data.ts`
+Programm: `src/app/data/program.data.ts`
 
-Unterkünfte: `public/data/accomodation.data.ts`
+Unterkünfte: `src/app/data/accomodation.data.ts`
 
-Verpflegung: `public/data/catering.data.ts`
+Verpflegung: `src/app/data/catering.data.ts`
 
-Historie: `public/data/history.data.ts`
+Historie: `src/app/data/history.data.ts`
 
 
 ## Bilder aktualisieren oder hinzufügen

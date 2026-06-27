@@ -3,8 +3,7 @@ import { Component } from '@angular/core';
 import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { Timeline } from '../../shared/components/timeline/timeline';
-
-import { HISTORY } from '../../../../public/data/history.data';
+import { HISTORY } from '../../data/history.data';
 
 @Component({
   selector: 'app-history',

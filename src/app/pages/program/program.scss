@@ -16,7 +16,7 @@
 
     border-radius: 16px;
 
-    background: white;
+    color: white;
 
     box-shadow: var(--shadow);
 
@@ -26,13 +26,35 @@
 
     transition: .25s;
 
+    background: linear-gradient(
+        155deg,
+        var(--primary-light),
+        var(--primary)
+    );
+
+    box-shadow:
+        0 10px 24px rgba(0, 83, 125, .22);
+
+}
+
+.day-selector button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 16px 36px rgba(0, 83, 125, .30);
+
+    filter: brightness(1.05);
+
 }
 
 .day-selector button.active {
 
-    background: var(--primary);
-
-    color: white;
+    background: linear-gradient(
+        155deg,
+        var(--primary),
+        var(--secondary)
+    );
 
 }
 

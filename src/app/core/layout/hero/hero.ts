@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 
 import { Button } from '../../../shared/components/button/button';
-import { GENERAL_INFO } from '../../../../../public/data/general.data';
+import { GENERAL_INFO } from '../../../data/general.data';
 
 @Component({
   selector: 'app-hero',

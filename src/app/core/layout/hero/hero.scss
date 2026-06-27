@@ -54,6 +54,8 @@
         var(--primary-light) 70%
     );
 
+    pointer-events: none;
+
 }
 
 .hero-content {
@@ -87,6 +89,7 @@
 .hero h1 {
 
     margin-bottom: 1.5rem;
+    font-size: clamp(2.2rem, 8vw, 5rem);
 
 }
 

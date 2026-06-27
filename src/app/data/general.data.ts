@@ -1,4 +1,4 @@
-import { Feature } from '../../src/app/shared/interfaces/feature';
+import { Feature } from '../shared/interfaces/feature';
 import { LOCATION } from './location.data';
 
 export const GENERAL_INFO = {

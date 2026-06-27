@@ -3,11 +3,7 @@ import { Component } from '@angular/core';
 import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { FeatureCard } from '../../shared/components/feature-card/feature-card';
-
-import {
-  CATERING,
-  RESTAURANTS
-} from '../../../../public/data/catering.data';
+import { CATERING, RESTAURANTS } from '../../data/catering.data';
 
 @Component({
   selector: 'app-catering',

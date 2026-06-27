@@ -4,7 +4,11 @@ export const LOCATION = {
 
   city: 'Bremerhaven',
 
-  address: 'Seeborg 17, D-27572 Bremerhaven',
+  address: 'Seeborg 17, 27572 Bremerhaven',
+
+  train: 'Bis Bremerhaven Hauptbahnhof und anschließend ÖPNV nutzen',
+
+  publicTransport: 'Haltestelle "Hornbach" (Buslinien 504 oder 505 vom Hbf)',
 
   shortDescription: 
     `

@@ -1,27 +1,63 @@
 @if (routerLink()) {
 
-<a
-    class="button"
-    [class.secondary]="variant() === 'secondary'"
-    [class.outline]="variant() === 'outline'"
-    [routerLink]="routerLink()">
+    <a
+        class="button"
+        [class.primary]="variant() === 'primary'"
+        [class.secondary]="variant() === 'secondary'"
+        [class.outline]="variant() === 'outline'"
+        [class.small]="size() === 'small'"
+        [class.large]="size() === 'large'"
+        [class.disabled]="disabled()"
+        [routerLink]="routerLink()">
 
-    {{ text() }}
+        @if(icon()){
 
-</a>
+            <span class="icon">
+
+                {{ icon() }}
+
+            </span>
+
+        }
+
+        <span>
+
+            {{ text() }}
+
+        </span>
+
+    </a>
 
 } @else {
 
-<a
-    class="button"
-    [class.secondary]="variant() === 'secondary'"
-    [class.outline]="variant() === 'outline'"
-    [href]="href()"
-    [target]="external() ? '_blank' : null"
-    [rel]="external() ? 'noopener noreferrer' : null">
+    <a
+        class="button"
+        [class.primary]="variant() === 'primary'"
+        [class.secondary]="variant() === 'secondary'"
+        [class.outline]="variant() === 'outline'"
+        [class.small]="size() === 'small'"
+        [class.large]="size() === 'large'"
+        [class.disabled]="disabled()"
+        [href]="disabled() ? null : href()"
+        [target]="external() ? '_blank' : null"
+        [rel]="external() ? 'noopener noreferrer' : null">
 
-    {{ text() }}
+        @if(icon()){
 
-</a>
+            <span class="icon">
+
+                {{ icon() }}
+
+            </span>
+
+        }
+
+        <span>
+
+            {{ external() ? text() + ' ↗' : text() }}
+
+        </span>
+
+    </a>
 
 }

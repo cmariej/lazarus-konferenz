@@ -19,7 +19,7 @@
         (click)="selectedDay.set('friday')"
         [class.active]="selectedDay() === 'friday'">
 
-        Freitag
+        Freitag{{ getConferenceDates().friday }}
 
       </button>
 
@@ -27,7 +27,7 @@
         (click)="selectedDay.set('saturday')"
         [class.active]="selectedDay() === 'saturday'">
 
-        Samstag
+        Samstag{{ getConferenceDates().saturday }}
 
       </button>
 
@@ -35,7 +35,7 @@
         (click)="selectedDay.set('sunday')"
         [class.active]="selectedDay() === 'sunday'">
 
-        Sonntag
+        Sonntag{{ getConferenceDates().sunday }}
 
       </button>
 

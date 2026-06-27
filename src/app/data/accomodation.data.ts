@@ -1,4 +1,4 @@
-import { Hotel } from '../../src/app/shared/interfaces/hotel';
+import { Hotel } from '../shared/interfaces/hotel';
 
 export const HOTELS: Hotel[] = [
 
