@@ -5,11 +5,13 @@
 Unter `public/data`
 
 Konferenz-Termin: `public/data/general.data.ts`
+
 Veranstaltungsort: `public/data/location.data.ts`
 
 Programm: `public/data/program.data.ts`
 
 Unterkünfte: `public/data/accomodation.data.ts`
+
 Verpflegung: `public/data/catering.data.ts`
 
 Historie: `public/data/history.data.ts`
@@ -20,6 +22,7 @@ Historie: `public/data/history.data.ts`
 Unter `public/images`
 
 Bilder zu Veranstaltungsorten: `public/images/locations`
+
 Bilder zu Unterkünften: `public/images/accomodation`
 
 
