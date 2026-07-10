@@ -24,6 +24,14 @@ export const HOTELS: Hotel[] = [
     image: 'images/accomodation-bremerhaven/gaestezimmer-stockinger.jpeg',
     distance: 'ca. 2 km',
     website: 'https://www.gaestezimmer-stockinger.de/'
+  },
+
+  {
+    name: 'B&B HOTEL Bremerhaven',
+    description: 'Ein schönes Hotel mit guter Lage',
+    image: 'images/accomodation-bremerhaven/BundB-hotel-Bremerhaven.png',
+    distance: 'ca. 8 km',
+    website: 'https://www.booking.com/hotel/de/b-amp-b-bremerhaven.de.html?chal_t=1783691015679&force_referer=https%3A%2F%2Fwww.google.com%2F'
   }
 
 ];
