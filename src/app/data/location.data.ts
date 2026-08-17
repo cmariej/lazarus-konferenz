@@ -20,7 +20,7 @@ export const LOCATION = {
 
   longDescription: 
     `
-        Die Lazarus-Konferenz 2026 findet in den modernen Konferenzräumen der **Elektro Sasse GmbH** in Bremerhaven statt. 
+        Die Lazarus-Konferenz 2026 findet in den modernen Konferenzräumen der Elektro Sasse GmbH in Bremerhaven statt. 
         Das familiengeführte Unternehmen blickt auf viele Jahre Erfahrung im Bereich Elektrotechnik und Gebäudetechnik zurück und 
         stellt seine Räumlichkeiten für die Veranstaltung zur Verfügung.\n
 
