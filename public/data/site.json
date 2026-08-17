@@ -1,0 +1,104 @@
+{
+  "general": {
+    "title": "Lazarus-Konferenz",
+    "date": "18.–20. September",
+    "year": "2026"
+  },
+  "location": {
+    "location": "Elektro-Sasse GmbH",
+    "city": "Bremerhaven",
+    "address": "Seeborg 17, 27572 Bremerhaven",
+    "train": "Bis Bremerhaven Hauptbahnhof und anschließend ÖPNV nutzen",
+    "publicTransport": "Haltestelle \"Hornbach\" (Buslinien 504 oder 505 vom Hbf)",
+    "shortDescription": "Der Konferenzraum der Elektro Sasse GmbH bietet den idealen Rahmen für drei Tage voller Vorträge, Workshops und Networking. Dank der guten Erreichbarkeit sowie zahlreicher Hotels und Restaurants in der Umgebung ist für Teilnehmerinnen und Teilnehmer bestens gesorgt.",
+    "longDescription": "Die Lazarus-Konferenz 2026 findet in den modernen Konferenzräumen der Elektro Sasse GmbH in Bremerhaven statt. Das familiengeführte Unternehmen blickt auf viele Jahre Erfahrung im Bereich Elektrotechnik und Gebäudetechnik zurück und stellt seine Räumlichkeiten für die Veranstaltung zur Verfügung.\n\nDie großzügigen und technisch gut ausgestatteten Konferenzräume bieten ideale Voraussetzungen für Vorträge, Workshops und den persönlichen Austausch innerhalb der Lazarus-Community. Moderne Präsentationstechnik, helle Räumlichkeiten und ausreichend Platz schaffen eine angenehme Atmosphäre für alle Teilnehmerinnen und Teilnehmer.\n\nWir bedanken uns herzlich bei der Elektro Sasse GmbH für die Unterstützung und die Möglichkeit, die Lazarus-Konferenz an diesem Veranstaltungsort auszurichten.",
+    "image": "images/locations/elektro-sasse-bremerhaven.png"
+  },
+  "homeFeatures": [
+    { "icon": "📅", "title": "18.–20. September", "text": "Drei Tage voller Vorträge und Workshops." },
+    { "icon": "📍", "title": "Elektro-Sasse GmbH", "text": "Bremerhaven" },
+    { "icon": "👥", "title": "Community", "text": "Treffe Entwickler aus ganz Europa." },
+    { "icon": "🎤", "title": "Praxis", "text": "Spannende Vorträge und Workshops." }
+  ],
+  "homeHighlights": [
+    { "icon": "💻", "title": "Lazarus", "text": "Neuigkeiten und Best Practices rund um Lazarus." },
+    { "icon": "⚡", "title": "Free Pascal", "text": "Moderne Entwicklungen im Compiler und der Sprache." },
+    { "icon": "🤝", "title": "Networking", "text": "Treffe Entwickler, Firmen und Open-Source-Projekte." },
+    { "icon": "🚀", "title": "Workshops", "text": "Praxisnahe Sessions zum Mitmachen." }
+  ],
+  "navigation": [
+    { "label": "Start", "route": "/" },
+    { "label": "Programm", "route": "/programm" },
+    { "label": "Veranstaltungsort", "route": "/veranstaltungsort" },
+    { "label": "Anreise", "route": "/anreise" },
+    { "label": "Unterkünfte", "route": "/unterkuenfte" },
+    { "label": "Geschichte", "route": "/geschichte" },
+    { "label": "Verpflegung", "route": "/verpflegung" }
+  ],
+  "program": [
+    { "day": "friday", "time": "13:00", "title": "Einlass", "description": "Elektro-Sasse GmbH\nSeeborg 17, 27572 Bremerhaven" },
+    { "day": "friday", "time": "13:30", "title": "Begrüßung & News" },
+    { "day": "friday", "time": "19:00", "title": "Gemeinsames Abendessen & Get Together" },
+    { "day": "saturday", "time": "09:00", "title": "Einlass", "description": "Elektro-Sasse GmbH\nSeeborg 17, 27572 Bremerhaven" },
+    { "day": "saturday", "time": "09:30", "title": "Begrüßung & Keynote", "description": "TBA" },
+    { "day": "saturday", "time": "10:00", "title": "Block I", "description": "TBA" },
+    { "day": "saturday", "time": "13:00", "title": "Mittagspause" },
+    { "day": "saturday", "time": "14:15", "title": "Block II", "description": "TBA" },
+    { "day": "saturday", "time": "18:20", "title": "Planung der nächsten Konferenz" },
+    { "day": "saturday", "time": "19:20", "title": "Gemeinsames Abendessen & Get Together" },
+    { "day": "sunday", "time": "09:00", "title": "Einlass", "description": "Elektro-Sasse GmbH\nSeeborg 17, 27572 Bremerhaven" },
+    { "day": "sunday", "time": "09:30", "title": "Community Roundtable" },
+    { "day": "sunday", "time": "13:00", "title": "Mittagessen" },
+    { "day": "sunday", "time": "14:00", "title": "Nachmittagsprogramm", "description": "TBA" }
+  ],
+  "travel": [
+    { "icon": "🚗", "title": "Mit dem Auto", "text": "Elektro-Sasse GmbH\nSeeborg 17,\n27572 Bremerhaven" },
+    { "icon": "🚆", "title": "Mit der Bahn", "text": "Bis Bremerhaven Hauptbahnhof und anschließend ÖPNV nutzen" },
+    { "icon": "🚌", "title": "ÖPNV", "text": "Haltestelle \"Hornbach\" (Buslinien 504 oder 505 vom Hbf)" },
+    { "icon": "🚲", "title": "Fahrrad", "text": "Vor Ort stehen ausreichend Fahrradstellplätze zur Verfügung." }
+  ],
+  "catering": [
+    { "icon": "☕", "title": "Kaffee & Tee", "text": "Während der Veranstaltung stehen Kaffee sowie heißes Wasser für Tee zur Verfügung." },
+    { "icon": "🍽️", "title": "Mittagspause", "text": "Für das Mittagessen stehen verschiedene Restaurants und Imbisse in unmittelbarer Nähe zur Verfügung." },
+    { "icon": "🤝", "title": "Gemeinsames Abendessen", "text": "Für Freitag- und Samstagabend werden gemeinsame Restaurants organisiert." }
+  ],
+  "restaurants": [
+    { "name": "Stadtbäckerei Engelbrecht", "distance": "ca. 220 m" },
+    { "name": "Böckels Beste", "distance": "ca. 300 m" },
+    { "name": "China-Restaurant Peking Haus", "distance": "ca. 280 m" },
+    { "name": "Diana's Hähnchengrill", "distance": "ca. 700 m" },
+    { "name": "Asiagourmet – Van Tat im Kaufland", "distance": "ca. 700 m" },
+    { "name": "Sushi Circle", "distance": "ca. 700 m" }
+  ],
+  "hotels": [
+    { "name": "havenhostel Bremerhaven", "description": "Modernes Hostel in bester Hafenlage", "image": "images/accomodation-bremerhaven/havenhostel.jpg", "distance": "ca. 9 km", "website": "https://www.havenhostel.de/de/bhv/startseite/" },
+    { "name": "Ferienwohnung/en Knollmann", "description": "Ruhige Ferienwohnung mit moderner Ausstattung", "image": "images/accomodation-bremerhaven/ferienwohnung-knollmann.jpg", "distance": "ca. 3,6 km", "website": "https://ferienwohnung-knollmann.de/index.php/de/" },
+    { "name": "Gästezimmer Stockinger", "description": "Gemütliches Gästezimmer mit maritimer Atmosphäre", "image": "images/accomodation-bremerhaven/gaestezimmer-stockinger.jpeg", "distance": "ca. 2 km", "website": "https://www.gaestezimmer-stockinger.de/" },
+    { "name": "B&B HOTEL Bremerhaven", "description": "Ein schönes Hotel mit guter Lage", "image": "images/accomodation-bremerhaven/BundB-hotel-Bremerhaven.png", "distance": "ca. 8 km", "website": "https://www.booking.com/hotel/de/b-amp-b-bremerhaven.de.html?chal_t=1783691015679&force_referer=https%3A%2F%2Fwww.google.com%2F" }
+  ],
+  "faq": [
+    { "question": "Wann beginnt die Konferenz?", "answer": "Die Konferenz beginnt am Freitag. Das genaue Programm wird rechtzeitig veröffentlicht." },
+    { "question": "Wo findet die Konferenz statt?", "answer": "In den Räumlichkeiten der Elektro-Sasse GmbH in Bremerhaven." },
+    { "question": "Wie erfolgt die Anmeldung?", "answer": "Die Anmeldung erfolgt ausschließlich über Eventfrog." },
+    { "question": "Gibt es WLAN?", "answer": "Ja, allen Teilnehmern steht kostenloses WLAN zur Verfügung." }
+  ],
+  "history": [
+    { "year": "2025", "title": "17. Lazaruskonferenz", "text": "18.–21. September 2025 – Sorpetaler Fensterbau GmbH, Sundern (Sauerland)", "image": "images/locations/sorpetaler-fensterbau.jpg" },
+    { "year": "2024", "title": "16. Lazaruskonferenz", "text": "06.–08. September 2024 – Leucorea, Wittenberg", "image": "images/locations/leucorea-wb.jpg" },
+    { "year": "2023", "title": "15. Lazaruskonferenz", "text": "22. & 24. September 2023 – Freitag und Sonntag – Technikforum, Backnang\n23. September 2023 – Samstag – Jugendhaus Treffpunkt 44, Backnang", "image": "images/locations/technikforum-jugendhaus-backnang.jpg" },
+    { "year": "2022", "title": "14. Lazaruskonferenz", "text": "16.–18. September 2022 – Kreativität trifft Technik, Oldenburg", "image": "images/locations/kreativitat-trifft-technik-oldenburg.jpg" },
+    { "year": "2021", "title": "13. Lazaruskonferenz", "text": "24.–26. September 2021 – Kreativität trifft Technik, Oldenburg", "image": "images/locations/kreativitat-trifft-technik-oldenburg.jpg" },
+    { "year": "2019", "title": "12. Lazarustreffen", "text": "13.–15. September 2019 – Leucorea, Wittenberg", "image": "images/locations/leucorea-wb.jpg" },
+    { "year": "2018", "title": "11. Lazarustreffen", "text": "01.–03. Juni 2018 – Anyway, Köln", "image": "images/locations/anyway-koln.jpg" },
+    { "year": "2017", "title": "10. Lazarustreffen", "text": "19.–21. Mai 2017 – Temporik Art, Reinheim", "image": "images/locations/temporik-art-reinheim.jpg" },
+    { "year": "2016", "title": "09. Lazarustreffen", "text": "23.–25. September 2016 – ev. Kirchengemeinde Paul-Gerhardt, Berlin", "image": "images/locations/ev-kirchengemeinde-paul-gerhardt-berlin.jpg" },
+    { "year": "2015", "title": "08. Lazarustreffen", "text": "07.–09. August 2015 – Kreativität trifft Technik, Oldenburg", "image": "images/locations/kreativitat-trifft-technik-oldenburg.jpg" },
+    { "year": "2014", "title": "07. Lazarustreffen", "text": "26.–27. Juli 2014 – Temporik Art, Reinheim", "image": "images/locations/temporik-art-reinheim.jpg" },
+    { "year": "2013", "title": "06. Lazarustreffen", "text": "13.–14. Juli 2014 – Universität Köln", "image": "images/locations/universitat-koln.jpg" },
+    { "year": "2012", "title": "05. Lazarustreffen", "text": "12.–15. Oktober 2012 – ev. Kirchengemeinde Paul-Gerhardt, Berlin", "image": "images/locations/ev-kirchengemeinde-paul-gerhardt-berlin.jpg" },
+    { "year": "2011", "title": "04. Lazarustreffen", "text": "18.–20. November 2011 – ev. Kirchengemeinde Paul-Gerhardt, Berlin", "image": "images/locations/ev-kirchengemeinde-paul-gerhardt-berlin.jpg" },
+    { "year": "2010", "title": "03. Lazarustreffen", "text": "22.–24. Oktober 2010 – Universitätsklinikum Ulm", "image": "images/locations/universitat-klinikum-ulm.jpg" },
+    { "year": "2009", "title": "02. Lazarustreffen", "text": "09.–11. Oktober 2009 – Universitätsklinikum Ulm", "image": "images/locations/universitat-klinikum-ulm.jpg" },
+    { "year": "2008", "title": "01. Lazarustreffen", "text": "01.–03. August 2008 – Kaiserstallungen auf Burg Nürnberg", "image": "images/locations/kaiserstallungen-burg-nurnberg.jpg" }
+  ]
+}

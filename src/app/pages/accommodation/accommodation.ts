@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { HotelCard } from '../../shared/components/hotel-card/hotel-card';
-import { HOTELS } from '../../data/accomodation.data';
+import { SiteDataService } from '../../core/data/site-data.service';
 
 
 @Component({
@@ -17,7 +17,7 @@ import { HOTELS } from '../../data/accomodation.data';
   styleUrls: ['./accommodation.scss']
 })
 export class Accommodation {
-
-  protected readonly hotels = HOTELS;
+  private readonly siteData = inject(SiteDataService);
+  protected readonly hotels = this.siteData.data.hotels;
 
 }

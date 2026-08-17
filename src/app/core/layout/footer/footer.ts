@@ -1,7 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { GENERAL_INFO } from '../../../data/general.data';
-import { LOCATION } from '../../../data/location.data';
+import { SiteDataService } from '../../data/site-data.service';
 
 @Component({
   selector: 'app-footer',
@@ -12,9 +11,9 @@ import { LOCATION } from '../../../data/location.data';
   styleUrls: ['./footer.scss']
 })
 export class Footer {
-
+  private readonly siteData = inject(SiteDataService);
   protected readonly year = new Date().getFullYear();
-  protected readonly general = GENERAL_INFO;
-  protected readonly location = LOCATION;
+  protected readonly general = this.siteData.data.general;
+  protected readonly location = this.siteData.data.location;
 
 }

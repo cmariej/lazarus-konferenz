@@ -1,10 +1,9 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, inject, signal } from '@angular/core';
 
 import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { ScheduleItem } from '../../shared/components/schedule-item/schedule-item';
-import { PROGRAM } from '../../data/program.data';
-import { GENERAL_INFO } from '../../data/general.data';
+import { SiteDataService } from '../../core/data/site-data.service';
 
 interface ConferenceDates {
     friday: string;
@@ -23,6 +22,8 @@ interface ConferenceDates {
   styleUrls: ['./program.scss']
 })
 export class Program {
+  private readonly siteData = inject(SiteDataService);
+  private readonly data = this.siteData.data;
 
   protected readonly hero = {
     title: 'Programm',
@@ -33,10 +34,10 @@ export class Program {
     signal<'friday' | 'saturday' | 'sunday'>('friday');
 
   protected readonly program = computed(() =>
-    PROGRAM.filter(item => item.day === this.selectedDay())
+    this.data.program.filter(item => item.day === this.selectedDay())
   );
 
-  date = GENERAL_INFO.date;
+  date = this.data.general.date;
 
   getConferenceDates(): ConferenceDates {
 

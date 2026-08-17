@@ -1,10 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { FeatureCard } from '../../shared/components/feature-card/feature-card';
-import { TRAVEL } from '../../data/travel.data';
-import { LOCATION } from '../../data/location.data';
+import { SiteDataService } from '../../core/data/site-data.service';
 
 @Component({
   selector: 'app-travel',
@@ -17,8 +16,8 @@ import { LOCATION } from '../../data/location.data';
   styleUrls: ['./travel.scss']
 })
 export class Travel {
-
-  protected readonly travel = TRAVEL;
-  protected readonly location = LOCATION;
+  private readonly siteData = inject(SiteDataService);
+  protected readonly travel = this.siteData.data.travel;
+  protected readonly location = this.siteData.data.location;
 
 }

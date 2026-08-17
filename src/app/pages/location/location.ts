@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
-import { LOCATION } from '../../data/location.data';
+import { SiteDataService } from '../../core/data/site-data.service';
 
 @Component({
   selector: 'app-location',
@@ -14,7 +14,7 @@ import { LOCATION } from '../../data/location.data';
   styleUrls: ['./location.scss']
 })
 export class Location {
-
-  protected readonly location = LOCATION;
+  private readonly siteData = inject(SiteDataService);
+  protected readonly location = this.siteData.data.location;
 
 }

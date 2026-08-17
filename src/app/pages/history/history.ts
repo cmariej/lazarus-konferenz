@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { Timeline } from '../../shared/components/timeline/timeline';
-import { HISTORY } from '../../data/history.data';
+import { SiteDataService } from '../../core/data/site-data.service';
 
 @Component({
   selector: 'app-history',
@@ -16,8 +16,8 @@ import { HISTORY } from '../../data/history.data';
   styleUrls: ['./history.scss']
 })
 export class History {
-
-  protected readonly history = HISTORY;
+  private readonly siteData = inject(SiteDataService);
+  protected readonly history = this.siteData.data.history;
 
   title = `${new Date().getFullYear() - 2008} Jahre Lazarus-Konferenz`;
 

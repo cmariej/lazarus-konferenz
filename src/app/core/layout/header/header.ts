@@ -3,6 +3,7 @@ import {
   HostListener,
   OnDestroy,
   OnInit,
+  inject,
   signal
 } from '@angular/core';
 
@@ -15,8 +16,7 @@ import {
 import { filter, Subscription } from 'rxjs';
 
 import { Navigation } from '../navigation/navigation';
-import { GENERAL_INFO } from '../../../data/general.data';
-import { NAVIGATION } from '../../../data/navigation';
+import { SiteDataService } from '../../data/site-data.service';
 
 @Component({
   selector: 'app-header',
@@ -28,10 +28,11 @@ import { NAVIGATION } from '../../../data/navigation';
   styleUrls: ['./header.scss']
 })
 export class Header implements OnInit, OnDestroy {
+  private readonly siteData = inject(SiteDataService);
 
-  protected readonly general = GENERAL_INFO;
+  protected readonly general = this.siteData.data.general;
 
-  protected readonly navigation = NAVIGATION;
+  protected readonly navigation = this.siteData.data.navigation;
 
   protected readonly mobileMenuOpen = signal(false);
 

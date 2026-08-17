@@ -1,7 +1,7 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 
 import { Button } from '../../../shared/components/button/button';
-import { GENERAL_INFO } from '../../../data/general.data';
+import { SiteDataService } from '../../data/site-data.service';
 
 @Component({
   selector: 'app-hero',
@@ -12,6 +12,7 @@ import { GENERAL_INFO } from '../../../data/general.data';
   styleUrls: ['./hero.scss']
 })
 export class Hero {
+  private readonly siteData = inject(SiteDataService);
 
   readonly title = input.required<string>();
 
@@ -19,8 +20,6 @@ export class Hero {
 
   readonly home = input(false);
 
-  protected readonly general = GENERAL_INFO;
-
-
+  protected readonly general = this.siteData.data.general;
 
 }

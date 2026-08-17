@@ -1,13 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 
 import { Hero } from '../../core/layout/hero/hero';
 import { Section } from '../../shared/components/section/section';
 import { FeatureCard } from '../../shared/components/feature-card/feature-card';
 import { Button } from '../../shared/components/button/button';
 import { Faq } from '../../shared/components/faq/faq';
-import { GENERAL_INFO, HOME_FEATURES, HOME_HIGHLIGHTS } from '../../data/general.data';
-import { LOCATION } from '../../data/location.data';
-import { FAQ_ITEMS } from '../../data/faq.data';
+import { SiteDataService } from '../../core/data/site-data.service';
 
 
 @Component({
@@ -23,11 +21,13 @@ import { FAQ_ITEMS } from '../../data/faq.data';
   styleUrls: ['./home.scss']
 })
 export class Home {
+  private readonly siteData = inject(SiteDataService);
+  private readonly data = this.siteData.data;
 
-  protected readonly general = GENERAL_INFO;
-  protected readonly features = HOME_FEATURES;
-  protected readonly highlights = HOME_HIGHLIGHTS;
-  protected readonly location = LOCATION;
-  protected readonly faq = FAQ_ITEMS;
+  protected readonly general = this.data.general;
+  protected readonly features = this.data.homeFeatures;
+  protected readonly highlights = this.data.homeHighlights;
+  protected readonly location = this.data.location;
+  protected readonly faq = this.data.faq;
 
 }
