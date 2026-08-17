@@ -8,6 +8,7 @@ export interface GeneralInfo {
   title: string;
   date: string;
   year: string;
+  ticketUrl: string;
 }
 
 export interface LocationInfo {
