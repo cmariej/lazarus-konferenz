@@ -6,6 +6,8 @@ export interface ScheduleItem {
 
   title: string;
 
+  speaker?: string;
+
   description?: string;
 
 }
